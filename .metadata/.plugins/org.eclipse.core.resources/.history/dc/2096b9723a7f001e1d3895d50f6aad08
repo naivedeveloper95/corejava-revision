@@ -1,0 +1,19 @@
+package synchronization.deadlocks;
+
+public class SecondResource {
+
+	public void method1(SecondResource sr) {
+		System.out.println("Inside method 1 of SR");
+
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public synchronized void method2() {
+		System.out.println("Inside method 2 of SR");
+	}
+
+}

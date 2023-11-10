@@ -1,0 +1,9 @@
+package synchronization.deadlocks;
+
+public class FirstResource {
+
+	public void method1() {
+		System.out.println("Inside method 1 of FR");
+	}
+
+}

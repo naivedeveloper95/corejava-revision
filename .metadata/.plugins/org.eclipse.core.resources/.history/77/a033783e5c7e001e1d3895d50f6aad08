@@ -1,0 +1,9 @@
+package mostwanted;
+
+public class ClassCastExceptionDemo {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

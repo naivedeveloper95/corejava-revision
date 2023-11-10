@@ -1,0 +1,9 @@
+package customexceptions;
+
+public class CheckedCustomException extends Exception {
+
+	public CheckedCustomException(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

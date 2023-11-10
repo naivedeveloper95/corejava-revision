@@ -1,0 +1,12 @@
+package synchronization.deadlocks;
+
+public class DeadlockDemo {
+	
+	FirstResource fr = new FirstResource();
+	SecondResource sr = new SecondResource();
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package staticinner;
+
+public class Outer {
+
+}

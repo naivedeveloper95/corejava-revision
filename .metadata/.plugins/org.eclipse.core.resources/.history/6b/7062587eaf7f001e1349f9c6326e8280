@@ -1,0 +1,10 @@
+public class GCDemo {
+
+	public GCDemo() {
+		System.out.println(this + " Created.");
+	}
+
+	public static void main(String[] args) {
+
+	}
+}

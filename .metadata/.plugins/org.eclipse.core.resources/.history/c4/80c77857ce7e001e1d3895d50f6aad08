@@ -1,0 +1,31 @@
+public class MultiThreaded extends Thread {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		MultiThreaded multiThreaded = new MultiThreaded();
+		multiThreaded.start();
+
+		Thread currentThread = Thread.currentThread();
+		System.out.println("Thread name is " + currentThread.getName());
+
+//		for (int i = 1; i <= 200; i++) {
+//			System.out.print("j : " + i + "\t");
+//			Thread.sleep(1000);
+//		}
+	}
+
+	public void run() {
+		Thread currentThread = Thread.currentThread();
+		System.out.println("Thread name is " + currentThread.getName());
+		
+		currentThread.setName("print_200_numbers");
+//		for (int i = 1; i <= 200; i++) {
+//			System.out.print("i : " + i + "\t");
+//			try {
+//				Thread.sleep(1000);
+//			} catch (InterruptedException e) {
+//				System.out.println("Child thread exiting!");
+//			}
+//		}
+	}
+}

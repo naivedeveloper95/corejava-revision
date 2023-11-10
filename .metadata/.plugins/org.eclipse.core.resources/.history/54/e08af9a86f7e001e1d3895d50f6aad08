@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class JoinDemo extends Thread {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

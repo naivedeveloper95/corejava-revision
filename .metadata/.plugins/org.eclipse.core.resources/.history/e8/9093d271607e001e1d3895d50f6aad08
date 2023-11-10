@@ -1,0 +1,8 @@
+public class SingleThreaded {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

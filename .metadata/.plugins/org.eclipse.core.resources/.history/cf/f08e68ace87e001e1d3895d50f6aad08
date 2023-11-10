@@ -1,0 +1,13 @@
+package synchronization.classlock;
+
+public class SynchronizationDemo {
+
+	public static void main(String[] args) {
+		
+		MyThread mt = new MyThread("Steve");
+		MyThread mt1 = new MyThread("Mark");
+		
+		mt.start();
+		mt1.start();
+	}
+}

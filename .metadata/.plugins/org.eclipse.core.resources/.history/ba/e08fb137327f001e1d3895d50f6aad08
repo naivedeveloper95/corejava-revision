@@ -1,0 +1,17 @@
+package threadgroups;
+
+public class ThreadGroupMethods {
+
+	public static void main(String[] args) {
+		ThreadGroup tg = new ThreadGroup("MyThreadGroup");
+
+		CustomThread ct1 = new CustomThread(tg, "ct1");
+		CustomThread ct2 = new CustomThread(tg, "ct2");
+		
+		ct1.start();
+		ct2.start();
+		
+		System.out.println(tg.activeCount());
+	}
+
+}

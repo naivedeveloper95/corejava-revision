@@ -1,0 +1,9 @@
+package threadgroups;
+
+public class ThreadGroupMethods {
+
+	public static void main(String[] args) {
+		new ThreadGroup("MyThreadGroup");
+	}
+
+}

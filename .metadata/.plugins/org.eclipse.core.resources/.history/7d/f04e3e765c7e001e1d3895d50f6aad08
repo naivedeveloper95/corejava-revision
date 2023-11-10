@@ -1,0 +1,11 @@
+package mostwanted;
+
+public class ClassCastExceptionDemo {
+
+	public static void main(String[] args) {
+		 Object obj = new Object();
+		 
+		 String s = (String) obj;
+	}
+
+}

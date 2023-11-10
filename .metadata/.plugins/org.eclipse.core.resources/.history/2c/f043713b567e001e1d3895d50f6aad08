@@ -1,0 +1,9 @@
+package customexceptions;
+
+public class UncheckedCustomException {
+
+	public UncheckedCustomException(String message) {
+		super(message);
+	}
+	
+}
