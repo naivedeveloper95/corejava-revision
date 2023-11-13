@@ -8,14 +8,10 @@ import java.util.StringTokenizer;
 public class BufferedReaderDemo {
 
 	public static void main(String[] args) {
-		FileReader fr = null;
-		BufferedReader br = null;
-
 		int count = 0;
 
-		try {
-			fr = new FileReader(new File("D:\\Code\\MSVSQ.txt"));
-			br = new BufferedReader(fr);
+		try (FileReader fr = new FileReader(new File("D:\\Code\\MSVSQ.txt"));
+				BufferedReader br = new BufferedReader(fr);) {
 
 			String line;
 
@@ -28,18 +24,21 @@ public class BufferedReaderDemo {
 				}
 			}
 			System.out.println("\n\n\nNumber of words in the file are " + count);
-		} catch (FileNotFoundException e) {
+		} catch (
+
+		FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
-			try {
-				fr.close();
-				br.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
 		}
+//		} finally {
+//			try {
+//				fr.close();
+//				br.close();
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
+//		}
 	}
 
 }
