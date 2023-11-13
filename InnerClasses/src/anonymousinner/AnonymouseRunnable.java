@@ -3,19 +3,9 @@ package anonymousinner;
 public class AnonymouseRunnable {
 
 	public static void main(String[] args) {
-
-		Thread t = new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				System.out.println("Anonymous Runnable Implementation");
-
-			}
-
-		});
+		final Thread t = new Thread(() -> System.out.println("Anonymous runnable impl."));
 
 		t.start();
-
 	}
 
 }

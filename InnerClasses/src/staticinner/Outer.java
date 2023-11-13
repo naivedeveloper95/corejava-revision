@@ -20,7 +20,7 @@ public class Outer {
 		Outer.f1();
 		Outer.Inner.f2();
 
-		Outer.Inner inner = new Outer.Inner();
+		final Outer.Inner inner = new Outer.Inner();
 		inner.f3();
 	}
 

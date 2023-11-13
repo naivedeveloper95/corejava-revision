@@ -6,14 +6,14 @@ import java.io.IOException;
 public class FileInputStreamDemo {
 
 	public static void main(String[] args) {
-
 		FileInputStream fis = null;
 
 		try {
-			fis = new FileInputStream(new File("/Users/bharaththippireddy/Documents/demo/myfile.txt"));
-			System.out.println("File Opened");
+			fis = new FileInputStream(new File("D:\\Code\\MSVSQ.txt"));
+			System.out.println("File opened!");
 
 			int i;
+
 			while ((i = fis.read()) != -1) {
 				System.out.print((char) i);
 			}
@@ -28,9 +28,8 @@ public class FileInputStreamDemo {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			System.out.println("\nFile Closed");
+			System.out.println("File closed!");
 		}
-
 	}
 
 }

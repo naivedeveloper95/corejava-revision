@@ -1,5 +1,0 @@
-package com.emc.managers;
-
-public interface EventManagers {
-
-}
