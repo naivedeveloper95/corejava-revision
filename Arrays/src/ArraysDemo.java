@@ -17,7 +17,6 @@ public class ArraysDemo {
 		// arr[7] = 70;
 
 		System.out.println("Elements of the array:");
-
 		for (int element : arr) {
 			System.out.println(element);
 		}

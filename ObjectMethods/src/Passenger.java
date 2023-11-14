@@ -20,16 +20,6 @@ public class Passenger {
 		this.lastName = lastName;
 	}
 
-	@Override
-	public String toString() {
-		return "Passenger Information is First Name:" + this.firstName + " Last Name:" + this.lastName;
-	}
-
-	@Override
-	public int hashCode() {
-		return id + firstName.length() + lastName.length();
-	}
-
 	public int getId() {
 		return id;
 	}
@@ -39,15 +29,20 @@ public class Passenger {
 	}
 
 	@Override
+	public String toString() {
+		return "Passenger Information :: First Name is " + firstName + " and Last Name is " + lastName;
+	}
+
+	@Override
+	public int hashCode() {
+		return id;
+	}
+
+	@Override
 	public boolean equals(Object obj) {
 		Passenger passenger = (Passenger) obj;
-		if (passenger.getId() == this.id && passenger.getFirstName().equals(this.firstName)
-				&& passenger.getLastName().equals(this.lastName)) {
-			return true;
-		}
-
-		return false;
-
+		return passenger.getId() == this.id && passenger.getFirstName() == this.firstName
+				&& passenger.getLastName() == this.lastName;
 	}
 
 }
