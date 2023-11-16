@@ -14,13 +14,25 @@ public class LinkedListDemo {
 			objects[i] = new Object();
 		}
 
-		List<Object> list = new ArrayList<>();
+		List<Object> arrayList = new ArrayList<>();
+
 		long start = System.currentTimeMillis();
 		for (Object object : objects) {
-			list.add(object);
+			arrayList.add(object);
 		}
+
 		long end = System.currentTimeMillis();
-		System.out.println("Time Taken:" + (end - start));
+		System.out.println("Time Taken for ArrayList: \t" + (end - start));
+
+		List<Object> linkedList = new LinkedList<>();
+
+		start = System.currentTimeMillis();
+		for (Object object : objects) {
+			linkedList.add(object);
+		}
+
+		end = System.currentTimeMillis();
+		System.out.println("Time Taken for LinkedList: \t" + (end - start));
 
 	}
 

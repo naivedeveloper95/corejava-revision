@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Code\corejava\Collections"/>
+			<item value="D:\Code\corejava\ObjectMethods"/>
+			<item value="D:\Code\corejava\Arrays"/>
 			<item value="D:\Code\corejava\IOStreams"/>
 			<item value="D:\Code\corejava\StringHandling"/>
 			<item value="D:\Code\corejava\InnerClasses"/>

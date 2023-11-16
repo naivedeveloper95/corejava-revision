@@ -9,18 +9,17 @@ public class ArrayListDemo {
 
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(new Integer(20));
-		list.add(10);// Autoboxing
+		list.add(10); // Auto-boxing
 		list.add(30);
-		// list.add("Hello");
 
-		Iterator<Integer> itr = list.iterator();
+		Iterator<Integer> iterator = list.iterator();
 
-		while (itr.hasNext()) {
-			System.out.println(itr.next());
-			itr.remove();
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+			iterator.remove();
 		}
-		System.out.println(list);
 
+		System.out.println(list);
 	}
 
 }
