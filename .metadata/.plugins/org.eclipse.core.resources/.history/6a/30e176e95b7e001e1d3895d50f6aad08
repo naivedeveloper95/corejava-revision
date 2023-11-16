@@ -1,7 +1,0 @@
-package mostwanted;
-
-public class StackOverFlowExceptionDemo {
-	public static void main(String[] args) {
-		
-	}
-}

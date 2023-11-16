@@ -7,25 +7,24 @@ import java.util.ListIterator;
 public class LIDemo {
 
 	public static void main(String[] args) {
-
 		List<String> list = new LinkedList<>();
 
 		list.add("abc");
 		list.add("def");
 		list.add("xyz");
 
-		ListIterator<String> itr = list.listIterator();
+		ListIterator<String> iterator = list.listIterator();
 
-		System.out.println("Traversing the list in the forward direction:");
-		while (itr.hasNext()) {
-			System.out.println(itr.next());
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+
 		}
 
-		System.out.println("Traversing the list in the backward direction:");
-		while (itr.hasPrevious()) {
-			System.out.println(itr.previous());
-		}
+		System.out.println();
+		while (iterator.hasPrevious()) {
+			System.out.println(iterator.previous());
 
+		}
 	}
 
 }

@@ -1,9 +1,0 @@
-package mostwanted;
-
-public class ArrayIndexOutOfBoundDemo {
-
-	public static void main(String[] args) {
-
-	}
-
-}

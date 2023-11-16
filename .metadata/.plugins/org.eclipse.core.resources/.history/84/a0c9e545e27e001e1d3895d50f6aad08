@@ -1,9 +1,0 @@
-package synchronization;
-
-public class DisplayMessage {
-
-	public synchronized void sayHello(String name) {
-		
-	}
-
-}
