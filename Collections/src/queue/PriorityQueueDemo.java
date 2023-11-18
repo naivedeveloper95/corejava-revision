@@ -6,23 +6,18 @@ import java.util.Queue;
 public class PriorityQueueDemo {
 
 	public static void main(String[] args) {
-
-		Queue<Integer> q = new PriorityQueue<>();
-		System.out.println(q.peek());
-		// System.out.println(q.element());
+		Queue<Integer> queue = new PriorityQueue<Integer>();
+		System.out.println(queue.peek());
+//		System.out.println(queue.element());
 
 		for (int i = 20; i <= 30; i++) {
-			q.offer(i);
+			queue.offer(i);
 		}
 
-		System.out.println(q);
-
-		System.out.println(q.poll());
-
-		System.out.println(q.remove());
-
-		System.out.println(q);
-
+		System.out.println(queue);
+		System.out.println(queue.poll());
+		System.out.println(queue.remove());
+		System.out.println(queue);
 	}
 
 }

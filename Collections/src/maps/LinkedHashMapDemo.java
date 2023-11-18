@@ -19,8 +19,12 @@ public class LinkedHashMapDemo {
 		Set<String> keySet = map.keySet();
 		System.out.println("Keys:" + keySet);
 
+		System.out.println("\n");
+
 		Collection<Integer> values = map.values();
 		System.out.println("Values:" + values);
+
+		System.out.println("\n");
 
 		for (String key : keySet) {
 			System.out.println("Key:" + key + " Value:" + map.get(key));
