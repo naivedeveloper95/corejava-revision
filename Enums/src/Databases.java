@@ -1,4 +1,4 @@
 
-public enum Databases{
-	MYSQL,ORACLE,SQLSERVER;
+public enum Databases {
+	MYSQL, ORACLE, SQLSERVER;
 }
