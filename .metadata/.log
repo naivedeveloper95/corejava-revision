@@ -5037,3 +5037,9 @@ java.net.UnknownHostException: www.genuitec.com
 	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.getApprovedDefinitions(IconDownloaderJob.java:86)
 	at com.genuitec.eclipse.theming.ui.IconDownloaderJob.run(IconDownloaderJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-11-20 16:08:32.927
+!MESSAGE Classpath changed for project: Generics
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-11-20 16:08:33.259
+!MESSAGE Classpath changed for project: Generics

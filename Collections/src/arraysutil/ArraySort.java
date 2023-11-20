@@ -33,6 +33,7 @@ public class ArraySort {
 		s[1] = "Y";
 		list.add("O");
 		System.out.println(list);
+		
 
 	}
 
