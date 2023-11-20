@@ -1,9 +1,10 @@
 import java.util.Iterator;
-import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.CopyOnWriteArraySet;
 
-public class ArrayListProblem extends Thread {
+public class ConcurrentHashMapDemo extends Thread {
 
-	static CopyOnWriteArrayList<String> coursesFailSafe = new CopyOnWriteArrayList<String>();
+//	static HashSet<String> coursesFailSafe = new HashSet<String>();
+	static CopyOnWriteArraySet<String> coursesFailSafe = new CopyOnWriteArraySet<String>();
 
 	@Override
 	public void run() {
@@ -17,7 +18,7 @@ public class ArrayListProblem extends Thread {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		ArrayListProblem arrayListProblem = new ArrayListProblem();
+		ConcurrentHashMapDemo arrayListProblem = new ConcurrentHashMapDemo();
 		arrayListProblem.start();
 
 		coursesFailSafe.add("Java");
