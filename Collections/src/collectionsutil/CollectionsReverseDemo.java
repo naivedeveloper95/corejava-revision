@@ -7,17 +7,15 @@ import java.util.List;
 public class CollectionsReverseDemo {
 
 	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<Integer>();
+		list.add(10);
+		list.add(8);
+		list.add(50);
+		list.add(78);
 
-		List<Integer> l = new ArrayList<>();
-
-		l.add(10);
-		l.add(8);
-		l.add(50);
-		l.add(78);
-
-		System.out.println("Before Reversing: " + l);
-		Collections.reverse(l);
-		System.out.println("After Reversing: " + l);
+		System.out.println("Before reversing : " + list);
+		Collections.reverse(list);
+		System.out.println("After reversing : " + list);
 	}
 
 }
