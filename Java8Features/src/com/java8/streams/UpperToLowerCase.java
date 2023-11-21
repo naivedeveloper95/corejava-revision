@@ -8,17 +8,21 @@ public class UpperToLowerCase {
 
 	public static void main(String[] args) {
 
-		List<String> l1 = new ArrayList<>();
-		l1.add("JOHN");
-		l1.add("BHARATH");
-		l1.add("JIM");
-		
-		System.out.println(l1);
-		
-		List<String> l2 = l1.stream().map(s->s.toLowerCase()).collect(Collectors.toList());
-		
-		System.out.println(l2);
+		List<String> list = new ArrayList<String>();
 
+		list.add("JOHN");
+		list.add("BHARAT");
+		list.add("JIM");
+
+		List<String> lowercasedList = list.stream().map(e -> e.toLowerCase()).collect(Collectors.toList());
+		System.out.println(lowercasedList);
+
+		long lowercasedListCount = list.stream().map(e -> e.toLowerCase()).count();
+		System.out.println(lowercasedListCount);
+
+		List<String> lowercasedListSorted = list.stream().map(e -> e.toLowerCase()).sorted()
+				.collect(Collectors.toList());
+		System.out.println(lowercasedListSorted);
 	}
 
 }
