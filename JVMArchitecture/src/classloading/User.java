@@ -1,12 +1,13 @@
 package classloading;
+
 public class User {
 
 	public String getName() {
-		return "Bharath";
+		return "Satyam";
 	}
 
 	public String getEmail() {
-		return "bharath@gmail.com";
+		return "satyam@gmail.com";
 	}
 
 }
