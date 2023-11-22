@@ -5,10 +5,10 @@ public class Test {
 		ThreeSeries threeSeries = new ThreeSeries();
 		threeSeries.accelerate();
 		threeSeries.commonFunc();
-		
+
 		FiveSeries fiveSeries = new FiveSeries();
 		fiveSeries.accelerate();
 		fiveSeries.commonFunc();
-		
+
 	}
 }
