@@ -1,4 +1,4 @@
-package com.bharath.java.reflection;
+package com.java.reflection;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

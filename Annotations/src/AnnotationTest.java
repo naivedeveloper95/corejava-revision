@@ -1,9 +1,8 @@
 
 public class AnnotationTest {
-	
-	@MyAnnotation
-	public void myMethod(){
-		
-	}
 
+	@MyAnnotation
+	public void myMethod() {
+
+	}
 }

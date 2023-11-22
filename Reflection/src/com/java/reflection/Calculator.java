@@ -1,4 +1,4 @@
-package com.bharath.java.reflection;
+package com.java.reflection;
 
 @MyAnnotation(value1 = "123", value2 = "456")
 public class Calculator {
@@ -34,5 +34,4 @@ public class Calculator {
 	public double sum(int n1, int n2) {
 		return n1 + n2;
 	}
-
 }
