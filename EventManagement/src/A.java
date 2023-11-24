@@ -1,6 +1,6 @@
 
 public class A {
-	A(){
+	A() {
 		System.out.println("A");
 	}
 }

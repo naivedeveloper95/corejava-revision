@@ -1,11 +1,12 @@
 
-public class B extends A{
+public class B extends A {
 
-	B(int a){
-		
+	B(int a) {
+
 	}
+
 	public static void main(String[] args) {
 		B b = new B(123);
-	
+
 	}
 }
