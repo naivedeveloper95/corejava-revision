@@ -8,7 +8,7 @@ import com.dating.model.UserAccount;
 public class UserAccountController {
 	public static void main(String[] args) {
 		UserAccountController userAccountController = new UserAccountController();
-		userAccountController.registerUser();
+		userAccountController.findMatchingUsers();
 	}
 
 	public void registerUser() {
@@ -41,11 +41,25 @@ public class UserAccountController {
 
 	public void findAll() {
 		UserAccountDAO dao = new UserAccountDAOImpl();
+		createUsers(dao);
+
+		dao.delete(2);
+		System.out.println(dao.findAll());
+	}
+
+	public void findMatchingUsers() {
+		UserAccountDAO dao = new UserAccountDAOImpl();
+		createUsers(dao);
+
+		System.out.println(dao.findMatches(30, "Austin"));
+	}
+
+	private void createUsers(UserAccountDAO dao) {
 		UserAccount userAccount1 = new UserAccount();
 
 		userAccount1.setId(1);
-		userAccount1.setAge(30);
-		userAccount1.setUserName("John");
+		userAccount1.setAge(70);
+		userAccount1.setUserName("Bob");
 		userAccount1.setCity("Austin");
 		userAccount1.setCountry("USA");
 		userAccount1.setEmail("a@b.com");
@@ -88,6 +102,5 @@ public class UserAccountController {
 		userAccount2.setInterest(interest2);
 
 		dao.save(userAccount2);
-		System.out.println(dao.findById(1));
 	}
 }
