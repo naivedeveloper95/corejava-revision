@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\Code\corejava\Reflection"/>
+			<item value="D:\Code\corejava\Annotations"/>
+			<item value="D:\Code\corejava\JVMArchitecture"/>
 			<item value="D:\Code\corejava\Java8Features"/>
 			<item value="D:\Code\corejava\Collections"/>
 			<item value="D:\Code\corejava\ObjectMethods"/>
